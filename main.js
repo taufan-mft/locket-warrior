@@ -17,18 +17,10 @@ function delay(time) {
 function generateRandom() {
     const min = 650
     const max = 1300
-    // find diff
     let difference = max - min;
-
-    // generate random number
     let rand = Math.random();
-
-    // multiply with difference
     rand = Math.floor(rand * difference);
-
-    // add with min value
     rand = rand + min;
-
     return rand;
 }
 
@@ -50,7 +42,7 @@ const conquerLocket = async () => {
     });
     await page.goto('https://google.com')
     await delay(600);
-    await page.goto('https://coldplayinjakarta.com', {
+    await page.goto('https://nowsecure.nl', {
         waitUntil: "domcontentloaded",
     });
     let is10Clock = false;
