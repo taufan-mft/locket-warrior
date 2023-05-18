@@ -42,7 +42,7 @@ const conquerLocket = async () => {
     });
     await page.goto('https://google.com')
     await delay(600);
-    await page.goto('https://nowsecure.nl', {
+    await page.goto('https://coldplayinjakarta.com', {
         waitUntil: "domcontentloaded",
     });
     let is10Clock = false;
